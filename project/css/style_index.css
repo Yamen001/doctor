@@ -123,8 +123,6 @@ header .logo img{
 
 }
 
-
-
 .main{
     padding: 130px 0 50px;
     margin-top: -115px;
@@ -148,7 +146,7 @@ header .logo img{
 }
 .main .right div{
     position: absolute;
-    background-image: url(/img/main5.jpg);
+    background-image: url(/project/img/main5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -473,18 +471,18 @@ header .logo img{
     background-position: center;
 }
 .doctors .box .col1 .card:nth-child(1) .left{
-    background-image: url(/img/doctor2..jpg);
+    background-image: url(/project/img/doctor2..jpg);
     background-position: top;
 }
 .doctors .box .col1 .card:nth-child(2) .left{
-    background-image: url(/img/doctor3.jpg);
+    background-image: url(/project/img/doctor3.jpg);
 }
 .doctors .box .col3 .card:nth-child(1) .left{
-    background-image: url(/img/doctor4.jpg);
+    background-image: url(/project/img/doctor4.jpg);
     background-position: top;
 }
 .doctors .box .col3 .card:nth-child(2) .left{
-    background-image: url(/img/doctor1.jpg);
+    background-image: url(/project/img/doctor5.jpg);
 }
 .doctors .box .col1 .card{
     text-align: right;
