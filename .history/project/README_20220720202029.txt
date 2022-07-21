@@ -1,0 +1,7 @@
+July 20 2022 documentation from kareem:
+
+
+connection is supported by apache and database connection supported by mysql software and the following databases supported
+
+# loginsdb
+where table name is: "user_logins"

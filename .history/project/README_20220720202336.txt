@@ -1,0 +1,16 @@
+July 20 2022 documentation from kareem:
+
+
+connection is supported by apache and database connection supported by mysql software and the following databases supported
+
+# loginsdb
+where table name is: "user_logins"
+
+-------------------------
+CURRENT BACKEND SITUATION
+-------------------------
+1) connect.php where we are able to connect with database
+
+NOTE:  -- file must be included in every php file that operates on data manipulation
+
+2) login.html has been updated to login.php where user is able to login into his account 
