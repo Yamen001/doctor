@@ -1,10 +1,11 @@
 <?php 
 
 include 'connect.php';
+// $msg = "";
 if (isset($_POST['submit'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $query = "SELECT * FROM logins WHERE username=? AND password=? AND user_type=?";
+    $query = "SELECT * FROM doctor_website WHERE username=? AND password=? AND user_type=?";
     $stmt = $connect ->prepare($sql);
     $stmt ->bind_param("sss",$username,$password,$userType);
     $stmt ->execute();
@@ -18,13 +19,12 @@ if (isset($_POST['submit'])){
             header("location:patient.php");
     }elseif($result ->num_rows ==1 && $_SESSION['role'] == "doctor"){
             header("location:doctor.php");
-    }elseif($result ->num_rows ==1 && $_SESSION['role'] == "admin"){
+    }else($result ->num_rows ==1 && $_SESSION['role'] == "admin"){
             header("location:admin.php");
-    }else{
-        echo "Invalid username or password";
     }
-}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,16 +58,7 @@ if (isset($_POST['submit'])){
             <div class="inputcon">
                 <label class="lbl1" for=""><i class="fa-solid fa-lock"></i></label>
                 <input type="password" name="password" id="" placeholder="Enter your password" required minlength="5">
-            </div>            
-            <!-- start modify options for level access -->
-            <div class="inputcon">
-                <label class="lbl1" for="">User Type</label>
-                <select name="userType" id="">
-                    <option value="patient">Patient</option>
-                    <option value="doctor">Doctor</option>
-                    <option value="admin">Admin</option>
-                </select>
-             <!-- end modify options for level access -->
+            </div>
             <a href="" class="forget-pass">forget Password?</a>
             <button type="submit" name="submit">Sign in</button>
             <div class="social-media">

@@ -1,6 +1,7 @@
 <?php 
 
 include 'connect.php';
+$msg = "";
 if (isset($_POST['submit'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -21,10 +22,12 @@ if (isset($_POST['submit'])){
     }elseif($result ->num_rows ==1 && $_SESSION['role'] == "admin"){
             header("location:admin.php");
     }else{
-        echo "Invalid username or password";
-    }
+            $msg = "Invalid username or password";
+}
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,16 +61,7 @@ if (isset($_POST['submit'])){
             <div class="inputcon">
                 <label class="lbl1" for=""><i class="fa-solid fa-lock"></i></label>
                 <input type="password" name="password" id="" placeholder="Enter your password" required minlength="5">
-            </div>            
-            <!-- start modify options for level access -->
-            <div class="inputcon">
-                <label class="lbl1" for="">User Type</label>
-                <select name="userType" id="">
-                    <option value="patient">Patient</option>
-                    <option value="doctor">Doctor</option>
-                    <option value="admin">Admin</option>
-                </select>
-             <!-- end modify options for level access -->
+            </div>
             <a href="" class="forget-pass">forget Password?</a>
             <button type="submit" name="submit">Sign in</button>
             <div class="social-media">

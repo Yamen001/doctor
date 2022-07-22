@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+session_start()
 $connect = new mysqli('localhost', 'root', '', 'doctor_website');
 
 
