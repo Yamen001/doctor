@@ -62,13 +62,14 @@ if (isset($_POST['submit'])){
             </div>            
             <!-- start modify options for level access -->
             <div class="inputcon">
-                <label class="lbl1" for="">User Type</label>
+                <label class="lbl1" for="">User Situation</label>
                 <select name="userType" id="">
                     <option value="patient">Patient</option>
                     <option value="doctor">Doctor</option>
                     <option value="admin">Admin</option>
                 </select>
-             <!-- end modify options for level access -->
+            </div>
+            <!-- end modify options for level access -->
             <a href="" class="forget-pass">forget Password?</a>
             <button type="submit" name="submit">Sign in</button>
             <div class="social-media">

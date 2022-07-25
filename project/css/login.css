@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 1px solid rgb(255, 0, 0); */
+    outline: 1px solid rgb(255, 0, 0);
 }
 body{
     padding: 20px 20px;
@@ -116,7 +116,7 @@ form .social-media i:hover{
     width: 50%;
     /* 50% form the father */
     /* background-color: green; */
-    background-image: url(/project/img/12.jpg);
+    background-image: url(img/12.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,4 +201,7 @@ form .social-media i:hover{
     .right .layer{
         font-size: 18px;
     }
+}
+form .inputcon:nth-child(3) .lbl1{
+    color: red;
 }
