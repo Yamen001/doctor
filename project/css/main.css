@@ -6,7 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
 
 html {
@@ -439,7 +439,7 @@ header .logo img {
 
 .main .right div {
     position: absolute;
-    background-image: url(../img/main5.jpg);
+    /* background-image: url(../project/img/after4.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1164,7 +1164,7 @@ input[type=range]:focus::-moz-range-thumb {
 
 .news .box .card1 {
     grid-area: new1;
-    background-image: url(../img/new2.jpg);
+    background-image: url(/project/img/new2.jpg);
 }
 
 .news .card2 {
