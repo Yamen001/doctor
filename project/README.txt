@@ -23,3 +23,21 @@ user is able to login only if the username and password has been provided and ex
 no remote route has been added to login.php therefore the active route is login.php where a side message is provided
 
 to insure user logging in.
+
+
+
+--------------------------
+July 25 2022 documentation from Yamen:
+
+index.html converted to main.html the same with css files
+signup.html has been removed ... index.html instead is created , index.css too.
+
+added new file (footer.html) ==> the style from the main.css
+added new file (navbar.html) ==> the style form the main.css
+
+
+2 loading screens has added.
+login.php has ended after adding ..the user situation 
+
+
+

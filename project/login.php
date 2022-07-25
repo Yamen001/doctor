@@ -47,7 +47,27 @@ if (isset($_POST['submit'])){
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
-
+<style>
+    .container form .inputcon1{
+        width: 100%;
+    }
+    .container form .inputcon1 .lbl1{
+        font-size: 15px;
+        margin-left: 16px;
+}
+.container form .inputcon1 select{
+        outline: none;
+        color: rgb(121, 121, 121);
+        padding: 5px 10px;
+        font-size: 12px;
+        border: 1px solid #aaa;
+    }
+    .container form .inputcon1 select option{
+        font-size: 13px;
+        outline: none;
+        margin-bottom: 10px;
+    }
+</style>
 <body>
     <div class="container">
         <form method="post">
@@ -61,12 +81,11 @@ if (isset($_POST['submit'])){
                 <input type="password" name="password" id="" placeholder="Enter your password" required minlength="5">
             </div>            
             <!-- start modify options for level access -->
-            <div class="inputcon">
-                <label class="lbl1" for="">User Situation</label>
-                <select name="userType" id="">
+            <div class="inputcon1">
+                <label class="lbl1" for="">User Situation :</label>
+                <select name="userType" required id="">
                     <option value="patient">Patient</option>
                     <option value="doctor">Doctor</option>
-                    <option value="admin">Admin</option>
                 </select>
             </div>
             <!-- end modify options for level access -->
@@ -82,7 +101,7 @@ if (isset($_POST['submit'])){
         <div class="right">
             <div class="layer">
                 <h1>You are New here? <br>
-                    <a href="signup.html">Sign up</a> <br> to get the news</h1>
+                    <a href="index.html">Sign up</a> <br> to get the news</h1>
             </div>
         </div>
 

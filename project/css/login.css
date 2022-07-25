@@ -80,7 +80,7 @@ form .lbl1 {
 
 form .forget-pass {
     align-self: flex-start;
-    margin: -10px 15px;
+    margin: -10px 15px -14px 15px;
     font-size: 15px;
     text-decoration: none;
     transition: .5s;
@@ -131,7 +131,7 @@ form .social-media i:hover {
     width: 50%;
     /* 50% form the father */
     /* background-color: green; */
-    background-image: url(img/12.jpg);
+    background-image: url(/project/img/12.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,7 +219,4 @@ form .social-media i:hover {
     .right .layer {
         font-size: 18px;
     }
-}
-form .inputcon:nth-child(3) .lbl1{
-    color: red;
 }
