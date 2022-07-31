@@ -1,31 +1,3 @@
-<?php 
-
-include 'connect.php';
-if (isset($_POST['submit'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $query = "SELECT * FROM logins WHERE username=? AND password=? AND user_type=?";
-    $stmt = $connect ->prepare($sql);
-    $stmt ->bind_param("sss",$username,$password,$userType);
-    $stmt ->execute();
-    $result = $stmt ->get_result();
-    $row = $result ->fetch_assoc();
-    session_regenerate_id();
-    $_SESSION['username'] = $row['username'];
-    $_SESSION['role'] = $row['user_type'];
-    session_write_close();
-    if($result ->num_rows ==1 && $_SESSION['role'] == "patient"){
-            header("location:patient.php");
-    }elseif($result ->num_rows ==1 && $_SESSION['role'] == "doctor"){
-            header("location:doctor.php");
-    }elseif($result ->num_rows ==1 && $_SESSION['role'] == "admin"){
-            header("location:admin.php");
-    }else{
-        echo "Invalid username or password";
-    }
-}
-// test
-?>
 <!DOCTYPE html>
 <html lang="en">
 
